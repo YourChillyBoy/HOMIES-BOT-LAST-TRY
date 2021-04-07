@@ -16,8 +16,8 @@ librsvg2-dev && \
 curl -sL https://deb.nodesource.com/setup_14.x | bash -E && apt-get install -y nodejs && \
 apt-get clean && \
 npm install -g pm2 && \
-git clone https://github.com/galnir/Master-Bot.git ./Master-Bot
-WORKDIR "/Master-Bot"
+git clone https://github.com/YourChillyBoy/homies-bot-finalle ./HOMIES-BOT-FINALLE
+WORKDIR "/HOMIES-BOT-FINALLE"
 COPY ./config.json* .
 COPY ./json.sqlite* .
 CMD ["pm2-runtime", "index.js"]
